@@ -1,7 +1,6 @@
 class BoardsController < ApplicationController
   def index
     @boards = Board.all
-    @board = Board.new
   end
 
   def show
@@ -9,6 +8,7 @@ class BoardsController < ApplicationController
   end
 
   def new
+    @board = Board.new
   end
 
   def create
@@ -16,7 +16,7 @@ class BoardsController < ApplicationController
     if @board.save
       redirect_to board_path(@board)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 

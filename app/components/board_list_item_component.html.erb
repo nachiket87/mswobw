@@ -1,0 +1,7 @@
+<li>
+  <div class="board__card">
+    <div class="board__name"><%= link_to @board.name, board_path(@board) %></div>
+    <div>Created at: <%= @board.created_at.strftime("%B %e, %Y") %></div>
+    <div> Author: <%= @board.email %></div>
+  </div>
+</li>

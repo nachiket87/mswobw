@@ -1,0 +1,9 @@
+<% if @tile.mine? %>
+  <div class="tile">
+    <i class="fa-solid fa-bomb"></i>
+  </div>
+<% else %>
+  <div class="tile unreleaved_tile">
+    <i class="fa-solid fa-square" style="color: #63E6BE;"></i>
+  </div>
+<% end %>

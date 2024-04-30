@@ -6,4 +6,8 @@ class Tile
     @revealed = revealed
     @flagged = flagged
   end
+
+  def mine?
+    @mine
+  end
 end
