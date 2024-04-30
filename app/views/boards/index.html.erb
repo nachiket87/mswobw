@@ -1,0 +1,29 @@
+<div class="main-container">
+  <%= form_with model: @board do |f| %>
+      <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+
+      <div>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+      </div>
+
+      <div>
+        <%= f.label :height %>
+        <%= f.number_field :height, step: 1 %>
+      </div>
+      <div>
+        <%= f.label :width %>
+        <%= f.number_field :width, step: 1 %>
+      </div>
+      <div>
+        <%= f.label :mine_count %>
+        <%= f.number_field :mine_count, step: 1 %>
+      </div>
+      <div>
+        <%= f.submit "Generate Board" %>
+      </div>
+  <% end %>
+</div>
