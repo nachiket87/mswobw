@@ -130,3 +130,9 @@ input {
 	display: flex;
 	justify-content: center;
 }
+
+.form-group {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
