@@ -10,6 +10,9 @@ class Board < ApplicationRecord
 
   scope :latest_ten, -> { order(created_at: :desc).limit(10) }
 
+
+  private 
+
   def generate_layout
     self.layout = BoardGenerator.call(height:, width:, mine_count:)
   end
