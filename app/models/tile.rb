@@ -1,5 +1,5 @@
 class Tile
-  attr_accessor :mine, :revealed, :flagged
+  attr_reader :mine, :revealed, :flagged
 
   def initialize(mine: false, revealed: false, flagged: false)
     @mine = mine
