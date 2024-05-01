@@ -1,16 +1,18 @@
 <div class="container container-sm">
-  <%= link_to "Home", root_path %>
   <div class="board__title">
     <h1>Mine Sweeper Board Generator </h1>
   </div>
   <div class="board__header">
-    <h3>Last 10 Boards</h3>
+    <h3>All Boards</h3>
     <%= link_to "Create New Board", new_board_path %>
   </div>
     
   <div>
     <ul class="board__list">
-      <%= render BoardListItemComponent.with_collection(Board.latest_ten) %>
+      <%= render BoardListItemComponent.with_collection(@boards) %>
     </ul>
+  </div>
+  <div class="centered-link">
+    <%= link_to "View all generated boards", boards_path %>
   </div>
 </div>

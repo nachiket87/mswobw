@@ -125,3 +125,8 @@ input {
 .container-sm {
 	max-width: 600px;
 }
+
+.centered-link {
+	display: flex;
+	justify-content: center;
+}
