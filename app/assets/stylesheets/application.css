@@ -139,3 +139,8 @@ input {
 	align-items: center;
 	gap: 1rem;
 }
+
+.board__spinner {
+	text-align: center;
+	font-size: 2rem;
+}

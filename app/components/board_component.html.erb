@@ -1,10 +1,17 @@
 <%= link_to "back", root_path %>
 <div class="board__container">
-  <div class="board__grid">
-    <%= render BoardRowComponent.with_collection(@layout) %>
+  <%= turbo_stream_from @board %>
+  <div class="board__grid" id="<%= dom_id(@board) %>">
+      <% if @layout.blank? %>
+        <div class="board__spinner">
+          <i class="fa-solid fa-spinner fa-spin "></i>
+        </div>
+      <% else %>
+        <%= render BoardRowComponent.with_collection(@layout) %>
+      <% end %>
   </div>
-  <div class="board__info">
-    <div> <h1>Board Name: <%= @board.name %></h1></div>
+  <div class="board__info" id="board">
+    <div > <h1>Board Name: <%= @board.name %></h1></div>
     <div>Created at: <%= @board.created_at.strftime("%B %e, %Y") %></div>
     <div>Author: <%= @board.email %></div>
   </div>
