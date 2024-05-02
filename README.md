@@ -1,5 +1,7 @@
 # Minesweeper board generator
 
+Assignment specs can be found here:  https://github.com/nachiket87/mswobw/blob/900dcfa7d0c5662272cd9f2f6431f9319d4de8d4/Technical%20Challenge%202023.pdf
+
 ### System Requirements
 
 Ruby: 3.2.2 
@@ -11,13 +13,10 @@ Database: Sqlite 3
 ### To Run in Development
 
 1. Install the above dependencies
-
-2. run `bundle install`
-
-3. `rails db:reset` OR `rails db:create, rails db:migrate`
-
-4. rails server
-
+2. Clone this repository
+3. run `bundle install`
+4. `rails db:reset` OR `rails db:create, rails db:migrate`
+5. rails server
 
 ### Other Notes
 
