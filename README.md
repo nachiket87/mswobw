@@ -1,24 +1,39 @@
-# README
+# Minesweeper board generator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### System Requirements
 
-Things you may want to cover:
+Ruby: 3.2.2 
 
-* Ruby version
+Rails Version: 7.1.3.2
 
-* System dependencies
+Database: Sqlite 3
 
-* Configuration
+### To Run in Development
 
-* Database creation
+1. Install the above dependencies
 
-* Database initialization
+2. run `bundle install`
 
-* How to run the test suite
+3. `rails db:reset` OR `rails db:create, rails db:migrate`
 
-* Services (job queues, cache servers, search engines, etc.)
+4. rails server
 
-* Deployment instructions
 
-* ...
+### Other Notes
+
+The app does not use any external libraries or styling intentionally in order to keep the frontend simple and reduce the burden of installation for the reviewer.
+all css has been put into a single application.css file.
+
+### Tests
+
+I have attempted to provide as much test coverage as I felt necessary and the test suite can be run by running `rails test` in the app folder.
+
+### Heroku requirements 
+
+Since Heroku no longer offers a free tier. I have used a similar service called Flydotio to deploy a production app here: https://mswobw-winter-sun-2744.fly.dev/
+flyctl cli tool was used for deployment.
+
+### Thank you
+
+I'd like to thank you
+
