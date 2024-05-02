@@ -30,10 +30,10 @@ I have attempted to provide as much test coverage as I felt necessary and the te
 
 ### Heroku requirements 
 
-Since Heroku no longer offers a free tier. I have used a similar service called Flydotio to deploy a production app here: https://mswobw-winter-sun-2744.fly.dev/
+Since Heroku no longer offers a free tier. I have used a similar service called Flydotio to deploy a production app here: https://mswobw-winter-sun-2744.fly.dev/ (may take a few seconds to load up due to free tier)
 flyctl cli tool was used for deployment.
 
 ### Thank you
 
-I'd like to thank you
+I'd like to thank you for the opportunity to complete this take home assignment and look forward to hearing your feedback.
 
